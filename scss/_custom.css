@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Poppins' sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    background: #61A8BE;
+}
+
+.navbar-brand{
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #63A9C0;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  word-spacing: 0px;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  display: block;
+}
+
+.nav-link{
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #63A9C0;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+}
+
+.collapsible-icons{
+  
+}
+.collapsible-icons #primary-menu > ul > li > a {
+  background: none;
+  padding: 30px 15px;
+  position: relative;
+  border-top: 3px solid transparent;
+  text-align: center;
+}
+.collapsible-icons #primary-menu > ul > li > a:before, .collapsible-icons #primary-menu > ul > li > a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.collapsible-icons #primary-menu > ul > li > a:hover:before,
+.collapsible-icons #primary-menu > ul > li.active > a:before {
+    opacity: 1;
+    top: 0;
+
+}
+
+.collapsible-icons #primary-menu > ul > li.active > a,
+.collapsible-icons #primary-menu > ul > li > a:hover {
+    border-top: 3px solid #ffffff;  
+}
+.collapsible-icons.affix {
+  background-color: #138fc2;
+}
+
+
+
+
+
+
+
