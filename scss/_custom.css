@@ -29,6 +29,27 @@ body {
     line-height: 1.8;
     background: #61A8BE;
 }
+.element {
+  position: relative;
+}
+
+/*replace the content value with the
+corresponding value from the list below*/
+
+.element:before {
+  content: "\f000";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+/*--adjust as necessary--*/
+  color: #000;
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
 
 .navbar-brand{
   color: #ffffff;
@@ -42,6 +63,7 @@ body {
   font-style: normal;
   margin: 0;
   display: block;
+  cursor: pointer;  
 }
 
 .nav-link{
@@ -98,6 +120,89 @@ body {
 .collapsible-icons.affix {
   background-color: #138fc2;
 }
+.home-page h2{
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+}
+.home-page p{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  background-image: #000000 url(images/parallax-2) no-repeat scroll center center / cover;
+}
+.home-page a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.button{
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #2f60c3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+  margin-top: 25px;
+  outline: none;
+}
+.button.white, .button:hover {
+  background-color: #ffffff;
+  color: #138fc2;
+  border: none;
+  outline: none;
+} 
+
+.button.white:hover {
+  background-color: #2f60c3;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+.owl-controls{
+  position: absolute;
+  left: 15px;
+  top: 100%;
+  -webkit-tap-highlight-color: transparent;
+  color: #ffffff;
+  display: block;
+}
+.owl-prev{
+  position: relative;
+    margin-top: 0;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 2.8;
+}
+
+.owl-next{
+  position: relative;
+    margin-top: 0;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    margin: 0 70px;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 2.8;
+}
+
 
 
 
